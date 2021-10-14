@@ -1,0 +1,42 @@
+{{!-- Formulario de ingreso de Productos --}}
+<div class="container p-5">
+
+  <form action="/api/productos" method="POST">
+    <div class="mb-3" id= "margen">
+      <label for="exampleInputEmail1" class="form-label">Producto: </label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        aria-describedby="emailHelp"
+        required="true"
+      />
+    </div>
+    <div class="mb-3" id= "margen">
+      <label for="exampleInputPassword1" class="form-label">Precio: </label>
+      <input
+        type="number"
+        step="0.01"
+        class="form-control"
+        id="price"
+        name="price"
+        required="true"
+
+      />
+    </div>
+    <div class="mb-3" id= "margen">
+      <label for="exampleInputPassword1" class="form-label">Ingrese el vínculo al thumbnail: </label>
+      <input
+        type="text"
+        class="form-control"
+        id="thumbnail"
+        name="thumbnail"
+        required="true"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary" >Registrar</button>
+  </form>
+
+</div>

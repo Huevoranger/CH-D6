@@ -1,0 +1,23 @@
+{{!-- Tabla de muestra de productos --}}
+
+<div class="#right">
+    <table border="1">
+    <tbody>
+    <tr>
+      <td>Id</td>
+      <th>Producto</th>
+      <th>Precio</th>
+      <th>Thumbnail</th>
+    </tr>
+    {{#each data}}
+      <tr>
+        <th>{{id}}</th>
+        <td>{{name}}</td>
+        <td>{{price}}</td>
+        <td><img src="{{thumbnail}}" width="80" height="80"></td>
+      </tr>
+     {{/each}}
+    </tbody>
+    </table>
+  </div>
+   
